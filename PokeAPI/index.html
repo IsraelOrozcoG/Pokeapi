@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+    <title>Poke API</title>
+</head>
+<body>
+    
+    <div class="poke_busqueda">
+        
+    <input type="text" placeholder="Pokemon" id="pokeName" name="pokeName">
+
+        <input type="image" src="assets/pokebola.png" class="pokebola"
+        onclick="fetchPokemon();" />
+        <!--
+        <button onclick="fetchPokemon();">
+    </button>-->
+    </div>
+    <div class="pokedex">
+    <div class="pokedex_a">
+        
+            <div class="botones_sup">
+            <div class="boton_sup"> </div>
+            <div class="boton_inf_r"></div>
+            <div class="boton_inf_a"></div>
+            <div class="boton_inf_v"></div>
+            </div>
+            <div class="forma_a"></div>
+            <div class="pantalla">
+                <img src="assets/pokebola" alt="Pokemon" id="pokeImg">
+            </div>
+            
+        <div class="tipo">
+            <div class="tipo_poke">Tipo</div>
+            <div id="type-screen" class="tipo-pantalla" ></div>
+        </div>
+
+        <div class="botones_inf">
+            <div class="boton_a"></div>
+            <div class="pad_direccional">
+                <img class="pad" src="assets/directional-pad.png" alt="">
+            </div>
+        </div>
+        </div>
+        
+        <div class="pokedex_b">
+            <div class="forma_b"></div>
+        <div class="basico">
+        <div id="about-screen"></div>
+        </div>
+        <div class="estadisticas">
+        <div id="estadisticas"></div>
+        </div>
+        <div class="movimientos">
+        <div id="tipo"></div>
+        </div>
+        </div>
+        </div>
+    <footer>
+        <script src="pokedex.js"></script>
+    </footer>
+</body>
+</html>

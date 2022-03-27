@@ -1,0 +1,247 @@
+*{
+
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 11px;
+
+}
+
+body{
+
+    background-image: url("https://static.wikia.nocookie.net/espokemon/images/0/02/Pok%C3%A9_Ball_%28Ilustraci%C3%B3n%29.png/revision/latest/scale-to-width-down/853?cb=20090125150654");
+    background-repeat:repeat;
+    background-size: 50px;
+    height: auto;
+}
+.poke_busqueda{
+
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.pokebola{
+
+    width: 50px;
+    height: 50px;
+    background-repeat:no-repeat;
+    background-size: 50px;
+    border-radius: 50%;
+}
+
+.pokebola:hover{
+
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.pokedex{
+
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+}
+.pokedex_a{
+
+    border-style: solid;
+    border-color:black;
+    margin-left:auto;
+    width: 250px;
+    height: 350px;
+    background-color: #fe0065;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px ;
+}
+
+.botones_sup{
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.boton_sup{
+
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+    border-style: solid;
+    border-color:white;
+    background-color: aqua;
+    background: radial-gradient(circle, rgba(250,250,250,1) 0%, rgba(5,251,232,1) 60%);
+}
+
+.boton_inf_r{
+
+    width:15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 20px;
+    border-style: solid;
+    border-color:black;
+    background-color: red;
+    background: radial-gradient(circle, rgba(250,250,250,1) 0%, red 60%);
+}
+
+.boton_inf_a{
+
+    width:15px;
+    height: 15px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color:black;
+    background-color: yellow;
+    background: radial-gradient(circle, rgba(250,250,250,1) 0%, yellow 60%);
+}
+
+.boton_inf_v{
+
+    width:15px;
+    height: 15px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color:black;
+    background-color: green;
+    background: radial-gradient(circle, rgba(250,250,250,1) 0%, green 60%);
+}
+
+.pantalla{
+
+    border-style: solid;
+    border-color:white;
+    background-color: #98cb98 ;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 15px;
+
+}
+
+.tipo{
+
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.tipo_poke{
+
+    width:45%;
+    text-align: right;
+}
+
+.tipo-pantalla{
+
+    width: 35%;
+    height: 20px;
+    border-style: solid;
+    border-color:black;
+    background-color: green;
+    border-radius: 7px;
+}
+
+#pokeImg{
+
+    max-width: 100% ;
+    max-height: 95%;
+}
+
+.botones_inf{
+
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;    
+}
+
+.boton_a{
+
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+    border-style: solid;
+    border-color:white;
+    background-color: black;
+}
+
+.pad_direccional{
+
+    width: 35%;
+    height: 70px;
+   margin-left: auto;
+
+}
+
+.pad{
+
+    width: 70px;
+    height: 70px;
+}
+
+.pokedex_b{
+
+    border-style: solid;
+    border-color:black;
+    margin-right:auto;
+    width: 250px;
+    height: 350px;
+    background-color: #fe0065;
+    clip-path: polygon(0 10%, 68% 10%, 73% 0, 86% 0, 100% 0, 100% 100%, 0 100%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px ;
+}
+
+.basico{
+
+    width: 90%;
+    height: 35px;
+    border-style: solid;
+    border-color:black;
+    background-color: green;
+    border-radius: 7px;
+}
+
+.estadisticas{
+
+    width: 90%;
+    height: 90px;
+    border-style: solid;
+    border-color:black;
+    background-color: green;
+    border-radius: 7px;
+}
+
+.movimientos{
+
+    width: 90%;
+    height: 60px;
+    border-style: solid;
+    border-color:black;
+    background-color: green;
+    border-radius: 7px;
+}
+
+.forma_b{
+
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    clip-path: polygon(0 80%, 75% 80%, 80% 7%, 100% 6%, 100% 0, 0 0);
+
+}
+
+.forma_a{
+
+    clip-path: polygon(0 80%, 45% 80%, 76% 0, 100% 0, 100% 39%, 76% 39%, 54% 100%, 0 100%);
+    background-color: black;
+    height: 20px;
+    width: 100%;
+}
+
+#tipo{
+    font-size: 7px;
+}
