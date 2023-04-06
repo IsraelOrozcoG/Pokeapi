@@ -34,27 +34,14 @@ const fetchPokemon = () => {
 
               console.log("Movimientos pokemon:"+Object.keys(data.moves).length);
               
-              /*Muesta maximo 4 movimientos del pokemon*/
-
-              if(Object.keys(data.moves).length == 1){
-                tipo.innerHTML = `Movimiento <br/>${data.moves[0].move.name} `;
+              /*Elimina informacion anterior*/ 
+              tipo.innerHTML = ``;
+              /*Muesta todos los movimientos del pokemon*/
+              for(let i=0;i<Object.keys(data.moves).length;i++)
+              {
+                tipo.innerHTML += `${data.moves[i].move.name}<br/>`;
               }
-              else if(Object.keys(data.moves).length == 2){
-                tipo.innerHTML = ` Movimientos <br/>${data.moves[0].move.name } 
-                                                <br/>${data.moves[1].move.name}`;    
-              }
-              else if(Object.keys(data.moves).length == 3){
-                tipo.innerHTML = ` Movimientos <br/>${data.moves[0].move.name } 
-                                                <br/>${data.moves[1].move.name}
-                                                <br/>${data.moves[2].move.name}`;   
-              }
-              else{
-                tipo.innerHTML = `Movimientos     <br/>${data.moves[0].move.name}
-                                                  <br/>${data.moves[1].move.name}
-                                                  <br/>${data.moves[2].move.name}
-                                                  <br/>${data.moves[3].move.name} `;    
-              }
-
+           
         }
     });
 }
