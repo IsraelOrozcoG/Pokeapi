@@ -109,6 +109,11 @@ body{
     background: radial-gradient(circle, rgba(250,250,250,1) 0%, green 60%);
 }
 
+.boton_inf_a:hover{
+
+    background-color: green;
+}
+
 .pantalla{
 
     border-style: solid;
@@ -126,12 +131,13 @@ body{
     margin-top: 15px;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .tipo_poke{
 
     width:45%;
-    text-align: right;
+    text-align: center;
 }
 
 .tipo-pantalla{
@@ -142,6 +148,7 @@ body{
     border-color:black;
     background-color: green;
     border-radius: 7px;
+    text-align: center;
 }
 
 #pokeImg{
@@ -155,6 +162,7 @@ body{
     margin-top: 25px;
     display: flex;
     flex-direction: row;    
+    
 }
 
 .boton_a{
@@ -178,8 +186,8 @@ body{
 
 .pad{
 
-    width: 70px;
-    height: 70px;
+    width: 80%;
+    height: 80%;
 }
 
 .pokedex_b{
