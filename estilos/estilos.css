@@ -8,7 +8,7 @@
 
 body{
 
-    background-image: url("https://static.wikia.nocookie.net/espokemon/images/0/02/Pok%C3%A9_Ball_%28Ilustraci%C3%B3n%29.png/revision/latest/scale-to-width-down/853?cb=20090125150654");
+    background-image: url("../assets/pokeball_illustration.png");
     background-repeat:repeat;
     background-size: 50px;
     height: auto;
