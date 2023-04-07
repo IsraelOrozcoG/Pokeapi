@@ -126,13 +126,23 @@ body{
 
 }
 
+.titulo{
+    width: 100%;
+    text-align: center;
+   
+    
+}
+
 .tipo{
 
     margin-top: 15px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-content: center;
+    
 }
+
+
 
 .tipo_poke{
 
@@ -231,7 +241,8 @@ body{
     border-color:black;
     background-color: green;
     border-radius: 7px;
-    overflow: auto;
+    overflow:auto;
+   
 }
 
 .forma_b{

@@ -11,13 +11,14 @@
     <title>Poke API</title>
 </head>
 <body>
-    
+    <audio id="sound1" src="assets/pokesound.mp3" preload="auto"></audio>
+   
     <div class="poke_busqueda">
         
     <input type="text" placeholder="Pokemon" id="pokeName" name="pokeName">
 
         <input type="image" src="assets/pokebola.png" class="pokebola"
-        onclick="fetchPokemon();" />
+        onclick="fetchPokemon(), document.getElementById('sound1').play();" />
         <!--
         <button onclick="fetchPokemon();">
     </button>-->
@@ -58,7 +59,7 @@
         <div id="estadisticas"></div>
         </div>
         <div class="movimientos">
-            Movimientos
+        <div class="titulo">Movimientos</div>
         <div id="tipo"></div>
         </div>
         </div>
