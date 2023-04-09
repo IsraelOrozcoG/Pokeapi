@@ -126,6 +126,10 @@ body{
 
 }
 
+.poke-name{
+    height: 10%;
+}
+
 .titulo{
     width: 100%;
     text-align: center;
@@ -164,7 +168,7 @@ body{
 #pokeImg{
 
     max-width: 100% ;
-    max-height: 95%;
+    max-height: 90%;
 }
 
 .botones_inf{

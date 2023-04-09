@@ -7,7 +7,11 @@ const fetchPokemon = () => {
         if (res.status != "200") {
             console.log(res);
             pokeImage(`assets/pikapika.png`);
-            
+            typeScreen.innerHTML = ``;
+            aboutScreen.innerHTML = ``;
+            pokemonName.innerHTML = ``;
+            estadisticas.innerHTML = ``;
+            tipo.innerHTML = ``;
         }
         else {
             return res.json();
@@ -31,9 +35,9 @@ const fetchPokemon = () => {
                                       Ataque Especial: ${data.stats[3].base_stat} <br/> 
                                       Defensa Especial: ${data.stats[4].base_stat} <br/>
                                       Velocidad: ${data.stats[5].base_stat}`;
-
+              console.log (`Nombre pokemon ${data.species.name}`);
               console.log("Movimientos pokemon:"+Object.keys(data.moves).length);
-              
+              pokemonName.innerHTML =`${data.species.name}`;
               /*Elimina informacion anterior*/ 
               tipo.innerHTML = ``;
               /*Muesta todos los movimientos del pokemon*/
@@ -41,6 +45,8 @@ const fetchPokemon = () => {
               {
                 tipo.innerHTML += `${data.moves[i].move.name}<br/>`;
               }
+
+              
            
         }
     });
@@ -53,6 +59,6 @@ const pokeImage = (url) => {
 
 const typeScreen = document.getElementById('type-screen'); // type screen
 const aboutScreen = document.getElementById('about-screen'); // about-text 
-
+const pokemonName = document.getElementById('name-pokemon');
 const estadisticas = document.getElementById('estadisticas'); //Estadisticas del pokemon
 const tipo = document.getElementById('tipo');
